@@ -116,25 +116,6 @@ The code performs the following steps:
 
 - **Setting Training Arguments:**
   - Training arguments are configured using `TrainingArguments`.
-  - Parameters include:
-    - `output_dir=model_output_path`
-    - `overwrite_output_dir=True`
-    - `num_train_epochs=2`
-    - `per_device_train_batch_size=4`
-    - `per_device_eval_batch_size=4`
-    - `evaluation_strategy='epoch'`
-    - `save_strategy='epoch'`
-    - `logging_strategy='steps'`
-    - `logging_steps=50`
-    - `weight_decay=0.01`
-    - `learning_rate=5e-5`
-    - `warmup_steps=50`
-    - `fp16=True` (to enable mixed precision training)
-    - `prediction_loss_only=True`
-    - `load_best_model_at_end=True`
-    - `metric_for_best_model='loss'`
-    - `greater_is_better=False`
-    - `save_safetensors=False` (to save the model in `pytorch_model.bin` format)
 - **Configuring Early Stopping:**
   - Early stopping is configured with `EarlyStoppingCallback` to prevent overfitting.
 - **Training the Model:**
@@ -171,7 +152,7 @@ The code performs the following steps:
   - The responses are compared to highlight the improvements gained from fine-tuning on the MedQuAD dataset.
 
 ## Files
-- [Fine-Tuning GPT-2 on MedQuAD for Medical Question Answering.ipynb](Fine-Tuning%20GPT-2%20on%20MedQuAD%20for%20Medical%20Question%20Answering.ipynb): The main Colab notebook containing the fine-tuning code and workflow.
+[Fine-Tuning GPT-2 on MedQuAD for Medical Question Answering.ipynb](Fine-Tuning%20GPT-2%20on%20MedQuAD%20for%20Medical%20Question%20Answering.ipynb): The main Colab notebook containing the fine-tuning code and workflow.
 **: The main Colab notebook containing the fine-tuning code and workflow.
 
 ## Business Applications
