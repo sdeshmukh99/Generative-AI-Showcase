@@ -171,9 +171,6 @@ The code performs the following steps:
   - The responses are compared to highlight the improvements gained from fine-tuning on the MedQuAD dataset.
 
 ## Files
-
-- **## Files
-
 - [Fine-Tuning GPT-2 on MedQuAD for Medical Question Answering.ipynb](Fine-Tuning%20GPT-2%20on%20MedQuAD%20for%20Medical%20Question%20Answering.ipynb): The main Colab notebook containing the fine-tuning code and workflow.
 **: The main Colab notebook containing the fine-tuning code and workflow.
 
