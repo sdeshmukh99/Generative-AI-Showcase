@@ -26,7 +26,7 @@ The code performs the following steps:
 #### 2. Importing Required Packages
 
 - All essential libraries are imported, including:
-  - **Data Handling and Processing:**
+  - *Data Handling and Processing:*
     - `os`
     - `re`
     - `numpy`
