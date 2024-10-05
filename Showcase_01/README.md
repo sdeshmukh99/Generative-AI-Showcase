@@ -1,20 +1,20 @@
-# Fine-Tuning GPT-2 on MedQuAD for Medical Question Answering
+## Fine-Tuning GPT-2 on MedQuAD for Medical Question Answering
 
 This project demonstrates the fine-tuning of GPT-2 on the Medical Question Answering (MedQuAD) dataset. The goal is to adapt GPT-2 to answer medical questions effectively.
 
 A fine-tuned model such as this can be used in healthcare to provide automated responses to medical queries, improving patient care and reducing the workload for medical professionals.
 
-## Key Steps:
+### Key Steps:
 1. Installing dependencies.
 2. Preparing the dataset (MedQuAD).
 3. Fine-tuning GPT-2 on the dataset.
 4. Evaluating the model performance.
 
-## Overview
+### Overview
 
 The code performs the following steps:
 
-### 1. Installing Dependencies
+#### 1. Installing Dependencies
 
 - All necessary packages are installed using `pip`, ensuring that the environment is set up properly.
 - Packages installed include:
@@ -23,7 +23,7 @@ The code performs the following steps:
   - `accelerate`
   - `transformers`
 
-### 2. Importing Required Packages
+#### 2. Importing Required Packages
 
 - All essential libraries are imported, including:
   - **Data Handling and Processing:**
@@ -40,12 +40,12 @@ The code performs the following steps:
 - Warnings are suppressed to keep the output clean.
 - The `model_output_path` is defined correctly for saving the model.
 
-### 3. Downloading the Dataset
+#### 3. Downloading the Dataset
 
 - The MedQuAD dataset is downloaded using `wget` and loaded into a pandas DataFrame.
 - The dataset contains medical questions and answers, which are essential for fine-tuning the model.
 
-### 4. Data Preprocessing
+#### 4. Data Preprocessing
 
 - **Handling Missing Values:**
   - Rows with missing 'Question' or 'Answer' fields are dropped to ensure data quality.
@@ -55,7 +55,7 @@ The code performs the following steps:
   - The total number of categories in the 'Focus' column is calculated.
   - The top 100 focus categories are identified and their names are extracted for further processing.
 
-### 5. Creating Training and Validation Sets
+#### 5. Creating Training and Validation Sets
 
 - Data is split into training and validation sets per focus category.
 - **Sample Reduction:**
@@ -68,7 +68,7 @@ The code performs the following steps:
 - **Resulting Data Samples:**
   - The number of training and validation samples is printed for verification.
 
-### 6. Preparing Data for Model Input
+#### 6. Preparing Data for Model Input
 
 - **Combining Questions and Answers:**
   - Questions and answers are combined with special tokens to create a suitable input format for the model.
@@ -76,7 +76,7 @@ The code performs the following steps:
 - **Saving to Text Files:**
   - The combined data is saved into `train_data.txt` and `val_data.txt` for both training and validation.
 
-### 7. Tokenizer and Model Setup
+#### 7. Tokenizer and Model Setup
 
 - **Loading the GPT-2 Tokenizer:**
   - The GPT-2 tokenizer is loaded using `GPT2Tokenizer.from_pretrained('gpt2')`.
@@ -91,7 +91,7 @@ The code performs the following steps:
 - **Enabling Gradient Checkpointing:**
   - Gradient checkpointing is enabled using `model.gradient_checkpointing_enable()` to reduce memory usage during training.
 
-### 8. Tokenizing the Data
+#### 8. Tokenizing the Data
 
 - **Loading Datasets:**
   - The datasets are loaded from the text files using `load_dataset('text', data_files=...)`.
@@ -103,7 +103,7 @@ The code performs the following steps:
 - **Applying Tokenization:**
   - The tokenization function is applied to the datasets using the `map` method.
 
-### 9. Data Collator Creation
+#### 9. Data Collator Creation
 
 - A data collator is created for language modeling using `DataCollatorForLanguageModeling`.
 - Parameters:
@@ -112,7 +112,7 @@ The code performs the following steps:
   - `return_tensors='pt'`
 - This helps in dynamically padding inputs during batching and prepares data for the language modeling task.
 
-### 10. Fine-Tuning the GPT-2 Model
+#### 10. Fine-Tuning the GPT-2 Model
 
 - **Setting Training Arguments:**
   - Training arguments are configured using `TrainingArguments`.
@@ -126,7 +126,7 @@ The code performs the following steps:
 - **Verifying Saved Files:**
   - The contents of the model directory are listed to verify that all necessary files are saved, including `pytorch_model.bin`.
 
-### 11. Testing the Fine-Tuned Model
+#### 11. Testing the Fine-Tuned Model
 
 - **Loading the Fine-Tuned Model and Tokenizer:**
   - The fine-tuned model and tokenizer are loaded from the saved directory.
@@ -142,7 +142,7 @@ The code performs the following steps:
     - "How can I lower my blood pressure?"
   - Outputs are printed to assess the model's performance.
 
-### 12. Comparing with the Original GPT-2 Model
+#### 12. Comparing with the Original GPT-2 Model
 
 - **Loading the Original GPT-2 Model:**
   - The original GPT-2 model and tokenizer are loaded without fine-tuning.
@@ -151,10 +151,10 @@ The code performs the following steps:
 - **Evaluating Improvements:**
   - The responses are compared to highlight the improvements gained from fine-tuning on the MedQuAD dataset.
 
-## Files
+### Files
 [Fine-Tuning GPT-2 on MedQuAD for Medical Question Answering.ipynb](Fine-Tuning%20GPT-2%20on%20MedQuAD%20for%20Medical%20Question%20Answering.ipynb): The main Colab notebook containing the fine-tuning code and workflow.
 
-## Business Applications
+### Business Applications
 
 A fine-tuned model such as this can be used in healthcare to:
 
