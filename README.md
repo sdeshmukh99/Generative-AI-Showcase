@@ -1,4 +1,4 @@
-### AI Product Management Journey
+### Exploring GenAI for Product and Application Development
 
 Welcome to my repository where I document my journey in exploring and applying **AI** concepts to real-world scenarios. This collection of showcases presents my hands-on work with AI models, particularly focusing on **Generative AI** and its applications. Through these showcases, I’m navigating the intersection of AI and product development—learning, building, and understanding how to leverage AI to create innovative solutions.
 
