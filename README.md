@@ -16,7 +16,7 @@ While I don’t consider myself an AI expert, my curiosity for GenAI have led me
 
 As I continue this journey, I aim to:
 - **Expand my expertise in AI**: Specifically around generative models.
-- **Collaborate with AI experts** to understand the nuances of AI application development, deployment, and scaling.
+- **Collaborate with AI experts** to learn the nuances of AI application development, deployment, and scaling.
 - **Document my learning process**: Offering insights to other enthusiasts.
 
 Stay tuned for more updates and projects as I navigate the exciting world of GenAI.
