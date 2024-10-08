@@ -1,109 +1,139 @@
 ## Objective
-- The primary objective of this code is to demonstrate the use of OpenAI's Whisper model for transcribing and translating audio files into text and speech across various languages. 
-- Additionally, it explores speaker diarization and audio-to-text-to-speech translation using external libraries like Google Text-to-Speech (gTTS) and Pyannote.
-- The code showcases how to integrate these tools with Gradio to create an interactive user interface for easy audio processing.
 
-### Install Dependencies
-In this section, we ensure that all necessary libraries are installed to support transcription, translation, and other audio-related tasks.
-
-- OpenAI's Whisper Library: Used for transcription and translation of audio data.
-- Pyannote: Used for speaker diarization, allowing us to distinguish between multiple speakers in a conversation.
-- Gradio: Simplifies the creation of an interactive web-based interface.
-- gTTS (Google Text-to-Speech): Converts text to speech, allowing us to generate audio files from text.
-
-### Libraries are installed here using pip commands.
-This section loads the required Python libraries and packages to execute different functionalities of the code.
-
-PyTorch and Torchaudio: For loading and manipulating audio data.
-Whisper: To transcribe and translate audio.
-gTTS: For converting text to speech.
-Pyannote: For speaker diarization.
-Gradio: To provide a user-friendly interface for real-time transcription and translation tasks.
-
-### The libraries are imported, and each one plays a specific role in transcription, audio processing, and user interface creation.
-3: Whisper Model Setup
-3.1 Loading Whisper Model
-Here, the code loads the Whisper model from OpenAI. Whisper supports transcription and translation, and we use the base model for these purposes.
-
-Model Loading: Whisper’s "base" model is loaded for use in transcription.
-Device Check: The model automatically checks whether it will run on CPU or GPU, optimizing performance.
-
-### Load the base Whisper model and check which device (CPU/GPU) is used.
-3.2 Test the Whisper Model with Audio
-This step demonstrates downloading a sample audio file and running a transcription test using Whisper.
-
-Spectrogram Generation: Audio data is converted into a log-Mel spectrogram, which the model uses to understand the audio.
-Language Detection: Whisper can automatically detect the language spoken in the audio.
-Transcription: The audio file is transcribed, and the transcription is output.
+This project demonstrates the use of OpenAI’s Whisper model for transcribing and translating audio files. It includes functionality for speaker diarization and text-to-speech (TTS) conversion using Google Text-to-Speech (gTTS). Additionally, the project provides a user-friendly interface using Gradio, making it easy to interact with these functionalities.
 
 
-### Download, play audio, and process it using Whisper for transcription.
-4: Transcription and Translation Functions
-This section defines custom functions for transcription and translation, providing more flexibility and control over how the audio is processed.
+## 1: Install Dependencies
 
-4.1 Transcription Function
-A function to transcribe audio and translate it into a chosen target language.
+This section handles the installation of the required libraries necessary for transcription, translation, speaker diarization, and the user interface.
 
-Input: An audio file and the desired output language.
-Processing: The Whisper model detects the spoken language, transcribes it, and the gTTS library converts the transcription into speech in the target language.
+- **OpenAI's Whisper Library**: Whisper is the primary model used for transcription and translation.
+- **Pyannote.audio**: This library is used for speaker diarization to separate different speakers in an audio file.
+- **Gradio**: Gradio provides an interactive interface for users to upload audio files and view transcriptions.
+- **gTTS**: Google Text-to-Speech (gTTS) is used for converting text transcriptions into spoken audio.
 
-###  The 'transcribe' function processes audio for transcription and translation, saving the result as an MP3 file.
-4.2 Testing the Function
-The function is tested with a French audio sample, transcribing it into English and converting it into speech.
 
-###  Download and transcribe a French audio file, then play the generated English speech.
-5: Using Whisper through OpenAI API
-5.1 API Authentication
-Here, we authenticate with the OpenAI API to access Whisper via API calls.
+## 2: Import Required Libraries
 
-API Key Retrieval: The API key is securely retrieved to enable access to OpenAI services.
+This section imports all necessary Python libraries for performing transcription, translation, audio processing, and generating a UI interface.
 
-###  Code to authenticate the OpenAI API.
-5.2 Creating OpenAI Client
-Once authenticated, an OpenAI client object is created to interact with the Whisper API.
+- **torch** and **torchaudio**: Used for tensor computations and handling audio data.
+- **Whisper**: The primary model used for speech recognition and transcription.
+- **Google Text-to-Speech (gTTS)**: Converts text to speech.
+- **Pyannote**: Enables speaker diarization.
+- **Gradio**: Used to create an interactive interface for audio input and output.
 
-5.3 Whisper API Usage
-This demonstrates how to transcribe and translate audio files using OpenAI’s Whisper API endpoints.
 
-###  Examples of how to transcribe and translate audio using OpenAI's Whisper API.
-6: Text-to-Speech Example
-This section uses Google Text-to-Speech (gTTS) to convert transcribed text into speech. We provide an example where a piece of text is converted into speech and saved as an audio file.
+## 3: Whisper Model Setup
 
-###  Text is converted into speech using gTTS and saved as an audio file.
-7: Any-Audio to English-Audio Translation
-This part of the code handles the conversion of non-English audio into English speech.
+### 3.1: Loading Whisper Model
 
-Steps:
-Audio is translated into English using Whisper.
-The translated text is converted into speech using gTTS.
+In this step, the Whisper model is loaded. The model is pre-trained for transcription and translation tasks.
 
-###  A function is defined to handle non-English audio and convert it into English speech.
-9: Capturing User Audio
-This section enables recording audio directly from users within the Colab environment.
+- **Whisper Model**: Loaded to handle the transcription process.
+- **Device Configuration**: The model automatically identifies whether it runs on a GPU or CPU.
 
-9.1 Record Audio from the User
-The code uses JavaScript integrated with Python to capture real-time audio from users.
 
-###  User audio is recorded in real-time and saved for further processing.
-9.2 Convert Recorded Audio to English Speech
-The recorded audio is transcribed and translated into English speech using the earlier functions.
+### 3.2: Test the Whisper Model with Audio
 
-###  Convert the recorded audio into English speech.
-10: Audio Capture and Speaker Diarization
-This part focuses on separating different speakers in a conversation using the Pyannote library.
+This subsection demonstrates how to test the model with a sample audio file. The steps include:
 
-10.1 Download a Sample Conversation Audio
-The code downloads an audio file with multiple speakers to demonstrate speaker diarization.
+- **Downloading a Sample Audio File**: The sample audio file is used to test the Whisper model's transcription capabilities.
+- **Spectrogram Generation**: The audio file is transformed into a log-Mel spectrogram for transcription.
+- **Language Detection**: Whisper can automatically detect the spoken language in the audio.
+- **Transcription**: The model transcribes the spoken content in the audio.
 
-10.2 Transcribing Audio for Each Speaker
-The code transcribes each speaker's segment separately, distinguishing between them using the Pyannote library.
 
-###  Pyannote is used to transcribe the audio for different speakers and separate the conversation into segments.
-11: Gradio Interface for Transcription and Translation
-Finally, a Gradio interface is built to allow users to upload their audio files, select a target language, and get the transcription and translation output interactively.
+## 4: Transcription and Translation Functions
 
-###  Gradio is used to create an easy-to-use interface for transcription and translation.
-12. Finally, a Gradio interface is built to allow users to upload their audio files, select a target language, and get the transcription and translation output interactively.
+### 4.1: Transcription Function
 
-###  Conclusion
-This code integrates several advanced tools like Whisper, gTTS, Pyannote, and Gradio to build a robust transcription, translation, and speaker diarization system. It is a powerful demonstration of how various models can work together to handle complex audio-processing tasks.
+This function handles the transcription and translation process. It takes an audio file and translates it into the desired target language. 
+
+- **Language Mapping**: A dictionary that maps different language names to language codes is used for translations.
+- **Transcription**: The audio file is transcribed using Whisper.
+- **Translation**: The transcribed text can be translated into different languages using Whisper and gTTS.
+
+### 4.2: Testing the Function with a French Audio File
+
+In this subsection, we demonstrate how the function transcribes a French audio file and translates it into English text and speech.
+
+
+## 5: Using Whisper through OpenAI API
+
+### 5.1: API Authentication
+
+Here, the code authenticates with the OpenAI API using a stored API key. This key allows interaction with OpenAI services such as Whisper.
+
+
+### 5.2: Create OpenAI Client
+
+An OpenAI client is created to communicate with the Whisper API for transcription and translation tasks.
+
+
+### 5.3: Using Whisper for Transcription and Translation
+
+This part showcases how to use Whisper's transcription and translation endpoints via the OpenAI API to process audio files. The steps include:
+
+- **Transcription**: Convert audio to text in the original language.
+- **Translation**: Convert non-English audio into English text.
+
+
+## 6: Text-to-Speech Example
+
+This section demonstrates how to convert transcribed text into speech using the gTTS library. The generated speech is saved as an audio file.
+
+
+## 7: Any-Audio to English-Audio Translation
+
+This section provides a comprehensive function to translate non-English audio into English speech.
+
+- **Steps**:
+  1. Translate audio into English text using Whisper.
+  2. Convert the translated text into English speech using gTTS.
+
+
+## 9: Capturing User Audio
+
+### 9.1: Record Audio from the User
+
+This section demonstrates how to record audio from the user within the Colab environment. The audio is saved as an MP3 file for further processing.
+
+
+### 9.2: Convert Recorded Audio to English Speech
+
+Once the user records audio, it can be processed to convert it into English speech using the functions defined earlier.
+
+
+## 10: Audio Capture and Speaker Diarization
+
+### 10.1: Pre-requisites for Using Speaker Diarization
+
+Speaker diarization is performed using the Pyannote library. This section ensures that all necessary setup is in place.
+
+### 10.2: Download a Sample Conversation Audio
+
+The code downloads a conversation audio file with multiple speakers to demonstrate speaker diarization.
+
+
+
+### 10.3: Transcribing the Audio Using Whisper API
+
+The downloaded audio is transcribed using the Whisper API.
+
+
+
+### 10.6: Run the Speaker Diarization Pipeline
+
+The Pyannote library separates the speakers in the conversation, providing time segments for each speaker.
+
+
+
+## 11: Gradio Interface for Transcription and Translation
+
+A simple **Gradio** interface allows users to upload their audio files and select a language for translation. The interface outputs the transcribed text and translated speech.
+
+
+## Conclusion
+
+This project demonstrates the capabilities of OpenAI’s Whisper model for audio transcription and translation, Google Text-to-Speech for text-to-speech conversion, and Pyannote for speaker diarization. Additionally, it provides an interactive Gradio interface to simplify user interaction.
