@@ -20,3 +20,10 @@ As I continue this journey, I aim to:
 - **Document my learning process**: Offering insights to other enthusiasts.
 
 Stay tuned for more updates and projects as I navigate the exciting world of GenAI.
+
+#### Index of Showcase
+
+- **Showcase_01**: Fine_Tuning_GPT_2_on_MedQuAD_for_Medical_Question_Answering
+- **Showcase_02**: OpenAI_Whisper_Model_Transcription_and_Translation
+- **Showcase_03**: Transformer_Encoder_for_Sentiment_Classification_with_IMDB_Dataset
+- **Showcase_04**: GPT_Decoder_for_Text_Generation_with_SST2
