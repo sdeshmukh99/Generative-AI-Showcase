@@ -27,3 +27,5 @@ Stay tuned for more updates and projects as I navigate the exciting world of Gen
 - **Showcase_02**: OpenAI_Whisper_Model_Transcription_and_Translation
 - **Showcase_03**: Transformer_Encoder_for_Sentiment_Classification_with_IMDB
 - **Showcase_04**: GPT_Decoder_for_Text_Generation_with_SST2
+- **Showcase_04**: Fine_Tuning_BERT_for_Intent_Classification_on_User_Queries
+
