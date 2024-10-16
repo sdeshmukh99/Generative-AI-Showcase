@@ -8,6 +8,18 @@ Welcome to my repository where I document my journey in exploring and applying *
 
 Each folder contains a specific project where I’ve applied AI techniques, fine-tuned models, and explored real-world use cases. These projects focus on understanding the role of AI in real-world use cases, from ideation and application development to deployment.
 
+**Summary:**
+
+| Showcase Name                                               | AI Model Used                  | AI Architecture Used          | AI Concepts                                              |
+| ----------------------------------------------------------- | ------------------------------ | ----------------------------- | -------------------------------------------------------- |
+| Fine-Tuning GPT-2 on MedQuAD for Medical Question Answering  | GPT-2                          | Transformer (decoder part)     | Fine-tuning, Transformer architecture, Question answering |
+| OpenAI Whisper Model Transcription and Translation           | Whisper                        | Transformer                   | Speech recognition, Multimodal AI (audio and text), Translation |
+| Transformer Encoder for Sentiment Classification with IMDB   | No specific pre-trained model   | Transformer Encoder            | Text classification, Sentiment analysis, Pre-trained models |
+| GPT Decoder for Text Generation with SST2                    | GPT                            | Transformer (decoder part)     | Text generation, Transformer decoder, Sentiment-based generation |
+| Fine-Tuning BERT for Intent Classification on User Queries   | BERT                           | Transformer (encoder part)     | Intent classification, Bidirectional attention, NLP sentence understanding |
+| Spam Classification Pipeline with Vectorization and Embedding Visualization | No specific pre-trained model   | Traditional NLP techniques     | Text vectorization, Embedding visualization, Binary classification |
+
+
 #### About This Journey
 
 While I don’t consider myself an AI expert, my curiosity for GenAI have led me to explore these complex systems, and through each project, I continue to build my knowledge and capabilities. I believe that with the right mix of strategic thinking, technical understanding, and hands-on experience, I will be able to lead AI product management and product marketing. 
@@ -29,5 +41,7 @@ Stay tuned for more updates and projects as I navigate the exciting world of Gen
 - **Showcase_04**: GPT_Decoder_for_Text_Generation_with_SST2
 - **Showcase_05**: Fine_Tuning_BERT_for_Intent_Classification_on_User_Queries
 - **Showcase_06**: Spam_Classification_Pipeline_with_Vectorization_and_Embedding_Visualization
+
+
 
 
