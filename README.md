@@ -18,6 +18,8 @@ Each folder contains a specific project where I’ve applied AI techniques, fine
 | GPT Decoder for Text Generation with SST2                    | GPT                            | Transformer (decoder part)     | Text generation, Transformer decoder, Sentiment-based generation |
 | Fine-Tuning BERT for Intent Classification on User Queries   | BERT                           | Transformer (encoder part)     | Intent classification, Bidirectional attention, NLP sentence understanding |
 | Spam Classification Pipeline with Vectorization and Embedding Visualization | No specific pre-trained model   | Traditional NLP techniques     | Text vectorization, Embedding visualization, Binary classification |
+| Leveraging LLMs for SQL Querying on Financial Data | GPT-4         | LangChain (LLM + SQL), Transformer | SQL query generation, Code generation, Data insights, LLM-driven automation |
+
 
 
 #### About This Journey
@@ -41,7 +43,7 @@ Stay tuned for more updates and projects as I navigate the exciting world of Gen
 - **Showcase_04**: GPT_Decoder_for_Text_Generation_with_SST2
 - **Showcase_05**: Fine_Tuning_BERT_for_Intent_Classification_on_User_Queries
 - **Showcase_06**: Spam_Classification_Pipeline_with_Vectorization_and_Embedding_Visualization
-
+- **Showcase_07**: LLM-Driven_Financial_Data_Querying_with_Automated_SQL_Generation_and_Insights
 
 
 
