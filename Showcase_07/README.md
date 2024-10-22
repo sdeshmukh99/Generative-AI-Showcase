@@ -1,3 +1,14 @@
+## Introduction
+
+This project demonstrates how we use Large Language Models (LLMs) like GPT-4 to automatically generate SQL queries and Python code based on natural language inputs. The goal is to make it easy to interact with financial data—specifically stock prices of Nifty 50 companies—without manual coding.
+
+By typing a simple question in plain English, the model can:
+
+- Understand what data you're asking for.
+- Generate the correct SQL query to fetch that data from a database.
+- Provide meaningful insights by analyzing the data or creating visualizations using Python.
+- We use LangChain and OpenAI to automate this process, removing the need for manual data querying and analysis. The project shows how we can combine the power of LLMs and structured data querying to efficiently analyze financial datasets with minimal effort from the user.
+
 ## 1. Required Modules
 We start by importing necessary modules and installing required dependencies. Since this project is designed to be run in Google Colab or a similar notebook environment, dependencies like OpenAI, LangChain, and SQLite need to be installed.
 
@@ -35,10 +46,10 @@ For example, if we extract stock prices for Wipro, we can generate code to visua
 ## 7. Closing the Database Connection
 At the end of the notebook, we close the database connection to avoid leaving any open connections. This is good practice to ensure the system resources are properly freed after the operations are completed.
 
-## 8. Conclusion
+## Conclusion
 This project walks through how Large Language Models (LLMs) like GPT-4 can be used to dynamically generate SQL queries and Python code, allowing for seamless interaction with financial datasets. The ability to interpret natural language queries and convert them into structured SQL commands makes the project highly versatile and adaptable for any structured data analysis.
 
 By leveraging LangChain and OpenAI’s LLM, we demonstrate how to automate querying and gain insights into the Nifty 50 financial data, creating a powerful tool for financial data analysis with minimal human intervention. This project showcases not just querying abilities but also automation in Python code generation, opening doors for sophisticated data analysis workflows.
 
-## Charts and Visualizations
+## Note: Charts and Visualizations
 Throughout the project, various visualizations (like bar charts for company data or trend lines for stock prices) are generated to assist in understanding the underlying data. These visualizations help uncover patterns and trends that are not immediately apparent from raw data.
