@@ -48,9 +48,6 @@ For example, if we extract stock prices for Wipro, we can generate code to visua
 At the end of the notebook, we close the database connection to avoid leaving any open connections. This is good practice to ensure the system resources are properly freed after the operations are completed.
 
 ## Conclusion
-This project walks through how Large Language Models (LLMs) like GPT-4 can be used to dynamically generate SQL queries and Python code, allowing for seamless interaction with financial datasets. The ability to interpret natural language queries and convert them into structured SQL commands makes the project highly versatile and adaptable for any structured data analysis.
+While LLMs like GPT-4 excel at understanding and generating natural language, they are not inherently designed to handle structured datasets such as databases. LLMs do not have direct access to the underlying structure of relational data, which is why they may struggle to execute complex queries or extract specific data points efficiently. This is where SQL comes into play, as it is purpose-built for querying and interacting with structured data in a precise and optimized manner.
 
-By leveraging LangChain and OpenAI’s LLM, we demonstrate how to automate querying and gain insights into the Nifty 50 financial data, creating a powerful tool for financial data analysis with minimal human intervention. This project showcases not just querying abilities but also automation in Python code generation, opening doors for sophisticated data analysis workflows.
-
-## Note: Charts and Visualizations
-Throughout the project, various visualizations (like bar charts for company data or trend lines for stock prices) are generated to assist in understanding the underlying data. These visualizations help uncover patterns and trends that are not immediately apparent from raw data.
+In this project, we use LLMs to interpret natural language inputs and generate SQL queries that interact with the structured financial data, combining the strengths of both technologies. This approach allows us to automate the data retrieval and analysis process, making it easy to gain insights from structured datasets like stock prices with minimal manual coding.
