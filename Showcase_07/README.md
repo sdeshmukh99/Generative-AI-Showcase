@@ -7,7 +7,8 @@ By typing a simple question in plain English, the model can:
 - Understand what data you're asking for.
 - Generate the correct SQL query to fetch that data from a database.
 - Provide meaningful insights by analyzing the data or creating visualizations using Python.
-- We use LangChain and OpenAI to automate this process, removing the need for manual data querying and analysis. The project shows how we can combine the power of LLMs and structured data querying to efficiently analyze financial datasets with minimal effort from the user.
+
+We use LangChain and OpenAI to automate this process, removing the need for manual data querying and analysis. The project shows how we can combine the power of LLMs and structured data querying to efficiently analyze financial datasets with minimal effort from the user.
 
 ## 1. Required Modules
 We start by importing necessary modules and installing required dependencies. Since this project is designed to be run in Google Colab or a similar notebook environment, dependencies like OpenAI, LangChain, and SQLite need to be installed.
