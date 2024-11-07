@@ -20,7 +20,7 @@ Each folder contains a specific project where I’ve applied AI techniques, fine
 | Spam Classification Pipeline with Vectorization and Embedding Visualization | No specific pre-trained model   | Traditional NLP techniques     | Text vectorization, Embedding visualization, Binary classification |
 | Leveraging LLMs for SQL Querying on Financial Data | GPT-4         | LangChain (LLM + SQL), Transformer | SQL query generation, Code generation, Data insights, LLM-driven automation |
 | [Multi-LLM Chat Interface](https://huggingface.co/spaces/shantanu9/multi-llm-gradio-demo)| GPT-3.5 (OpenAI), Gemini (Google) | Transformer (decoder), Transformer (encoder-decoder) | Model integration, Voice input, Error handling, Conversation management, Asynchronous operations, API integration, Audio processing, Web interface development |
-| [Appeals IQ 2.0 - Medicare Appeals Assistant](https://huggingface.co/spaces/shantanu9/Appeal_IQ_2.0) | GPT-3.5                   | LangChain (LLM + RAG with FAISS)          | Retrieval-Augmented Generation, Role-Based Access Control, Embeddings, Streamlit UI |
+| [Appeals IQ 2.0 - Medicare Appeals Assistant](https://huggingface.co/spaces/shantanu9/Appeal_IQ_2.0) | GPT-3.5, MiniLM-L6-v2                   | LangChain (LLM + RAG with FAISS)          | Retrieval-Augmented Generation, Role-Based Access Control, Embeddings, Streamlit UI |
 
 
 
