@@ -19,7 +19,8 @@ Each folder contains a specific project where I’ve applied AI techniques, fine
 | Fine-Tuning BERT for Intent Classification on User Queries   | BERT                           | Transformer (encoder part)     | Intent classification, Bidirectional attention, NLP sentence understanding |
 | Spam Classification Pipeline with Vectorization and Embedding Visualization | No specific pre-trained model   | Traditional NLP techniques     | Text vectorization, Embedding visualization, Binary classification |
 | Leveraging LLMs for SQL Querying on Financial Data | GPT-4         | LangChain (LLM + SQL), Transformer | SQL query generation, Code generation, Data insights, LLM-driven automation |
-| Multi-LLM Chat Interface | GPT-3.5 (OpenAI), Gemini (Google) | Transformer (decoder), Transformer (encoder-decoder) | Model integration, Voice input, Error handling, Conversation management, Asynchronous operations, API integration, Audio processing, Web interface development |
+| [Multi-LLM Chat Interface](https://huggingface.co/spaces/shantanu9/multi-llm-gradio-demo)| GPT-3.5 (OpenAI), Gemini (Google) | Transformer (decoder), Transformer (encoder-decoder) | Model integration, Voice input, Error handling, Conversation management, Asynchronous operations, API integration, Audio processing, Web interface development |
+| [Appeals IQ 2.0 - Medicare Appeals Assistant](https://huggingface.co/spaces/shantanu9/Appeal_IQ_2.0) | GPT-3.5                   | LangChain (LLM + RAG with FAISS)          | Retrieval-Augmented Generation, Role-Based Access Control, Embeddings, Streamlit UI |
 
 
 
@@ -46,6 +47,8 @@ Stay tuned for more updates and projects as I navigate the exciting world of Gen
 - **Showcase_06**: Spam_Classification_Pipeline_with_Vectorization_and_Embedding_Visualization
 - **Showcase_07**: LLM-Driven_Financial_Data_Querying_with_Automated_SQL_Generation_and_Insights
 - **Showcase_08:** Multi-LLM_Chat_Interface_with_Voice_Input_and_Dual_Model_Integration (separate repo)
+- **Showcase_09:** Appeals IQ 2.0 Medicare_Appeals_Assistant_with_RAG_and_Role-Based_Access_Control (separate repo)
+
 
 
 
