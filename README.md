@@ -46,8 +46,8 @@ Stay tuned for more updates and projects as I navigate the exciting world of Gen
 - **Showcase_05**: Fine_Tuning_BERT_for_Intent_Classification_on_User_Queries
 - **Showcase_06**: Spam_Classification_Pipeline_with_Vectorization_and_Embedding_Visualization
 - **Showcase_07**: LLM-Driven_Financial_Data_Querying_with_Automated_SQL_Generation_and_Insights
-- **Showcase_08:** Multi-LLM_Chat_Interface_with_Voice_Input_and_Dual_Model_Integration (separate repo)
-- **Showcase_09:** Appeals IQ 2.0 Medicare_Appeals_Assistant_with_RAG_and_Role-Based_Access_Control (separate repo)
+- **Showcase_08:** Multi-LLM_Chat_Interface_with_Voice_Input_and_Dual_Model_Integration (see repo on HuggingFace Spaces)
+- **Showcase_09:** Medicare_Appeals_Assistant_with_RAG_and_Role-Based_Access_Control (see repo on HuggingFace Spaces)
 
 
 
